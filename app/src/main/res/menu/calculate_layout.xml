@@ -13,7 +13,15 @@
         android:id="@+id/cal2"
         app:showAsAction="never"
         android:title="Advice About Love &amp; Relationships "
+
+
         />
 
 
+
+
+    <item
+        android:id="@+id/aboutId"
+        android:title="About us"
+        app:showAsAction="never" />
 </menu>

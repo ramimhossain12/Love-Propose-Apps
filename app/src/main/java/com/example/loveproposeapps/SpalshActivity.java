@@ -5,29 +5,53 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 public class SpalshActivity extends AppCompatActivity {
 
-
-    private ImageView imageView;
-    private Button button;
+    private ProgressBar progressBar;
+    int progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_spalsh);
-
-        imageView= findViewById(R.id.imageView22ID);
-        button= findViewById(R.id.Letsgo22ID);
-
-        button.setOnClickListener(new View.OnClickListener() {
+        progressBar = findViewById(R.id.progreesbarID);
+        Thread thread = new Thread(new Runnable() {
             @Override
-            public void onClick(View v) {
-                Intent in = new Intent(SpalshActivity.this,MainActivity.class);
-                startActivity(in);
+            public void run() {
+                doWork();
+                startApp();
             }
         });
+        thread.start();
+
+
+    }
+
+    private void startApp() {
+
+        Intent intent= new Intent(SpalshActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void doWork() {
+
+        for (progress=20;progress<=100;progress=progress+20){
+            try {
+                Thread.sleep(1000);
+                progressBar.setProgress(progress);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }

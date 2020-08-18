@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,73 +7,33 @@
     android:padding="10dp"
     android:orientation="vertical"
     android:background="#000000"
-    android:gravity="center"
     tools:context=".SpalshActivity">
 
 
 
-    <LinearLayout
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_height="match_parent">
+        android:layout_height="700dp"
+        app:lottie_fileName="love.json"
+        android:scaleType="fitCenter"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"/>
 
 
-        <ImageView
-            android:id="@+id/imageView22ID"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/kl" />
+    <ProgressBar
+        android:id="@+id/progreesbarID"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_margin="20dp"
 
-        <ImageView
-            android:id="@+id/imageView222ID"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/woman"
-            android:layout_marginBottom="50dp"
-
-            />
+        />
 
 
 
 
 
-
-
-
-        <Button
-            android:id="@+id/Letsgo22ID"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="84dp"
-            android:background="@drawable/shap_button"
-            android:text="Let's go !!"
-            android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:text="Develope By Ramim Hossain"
-            android:textColor="#fff"/>
-
-
-
-
-    </LinearLayout>
-
-
-
-
-
-
-
-</ScrollView>
+</LinearLayout>

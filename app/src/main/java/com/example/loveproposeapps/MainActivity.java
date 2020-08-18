@@ -64,6 +64,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             Intent n = new Intent(MainActivity.this,TipsActivity.class);
             startActivity(n);
         }
+        else if (item.getItemId()==R.id.aboutId){
+
+            Intent n = new Intent(MainActivity.this,about.class);
+            startActivity(n);
+
+        }
         return super.onOptionsItemSelected(item);
     }
 
