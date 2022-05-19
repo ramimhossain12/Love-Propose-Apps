@@ -7,105 +7,98 @@
     android:padding="10dp"
     android:weightSum="4"
     android:orientation="vertical"
-   android:background="@drawable/kk"
     tools:context=".MainActivity">
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:orientation="vertical"
-     android:layout_height="match_parent">
 
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="Will you be my life partner ?"
-         android:textSize="35sp"
-         android:textAlignment="center"
-         android:textColor="#FFFFFF"
-         android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
-     <ImageView
-         android:layout_width="match_parent"
-         android:layout_height="200dp"
-         android:src="@drawable/lo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Will you be my life partner ?"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:gravity="center_horizontal" />
 
-
-
-
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:orientation="vertical"
-
-         >
-
-
-
-         <EditText
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:hint="Enter your name + your partner name: "
-             android:textColor="#ffff"
-             android:textColorHint="#ffff"
-             android:layout_marginRight="20dp"
-             android:layout_marginLeft="10dp"
-             android:id="@+id/nameEditTextID"
-             android:textSize="17sp"
-             android:textStyle="bold"/>
-
-          <EditText
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:hint="Enter your propose : "
-             android:textColor="#ffff"
-             android:textColorHint="#ffff"
-             android:layout_marginRight="20dp"
-             android:layout_marginLeft="10dp"
-             android:id="@+id/massegeEditTextID"
-             android:textSize="17sp"
-             android:textStyle="bold"/>
-
-
-         <Button
-             android:layout_width="235dp"
-             android:layout_marginTop="10dp"
-             android:layout_height="match_parent"
-             android:paddingLeft="10dp"
-             android:background="@drawable/shap_button"
-             android:textColor="#ffff"
-             android:textSize="15dp"
-             android:text="Yes OF Crouse"
-             android:id="@+id/yesbtnID"
-             />
-
-         <Button
-             android:layout_width="220dp"
-             android:layout_marginTop="10dp"
-             android:layout_height="match_parent"
-             android:paddingLeft="10dp"
-             android:textSize="15dp"
-             android:text="No"
-             android:background="@drawable/btn_shape"
-             android:textColor="#FFFCFC"
-             android:id="@+id/nobtnID"
-
-             />
-
-
-     </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ht"/>
 
 
 
 
 
- </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name + Your Partner Name: "
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/nameEditTextID"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Propose Letter : "
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/massegeEditTextID"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:orientation="horizontal">
+
+
+           <Button
+
+               android:layout_width="160dp"
+               android:layout_marginTop="22dp"
+               android:layout_height="match_parent"
+
+               android:backgroundTint="#4CAF50"
+               android:textColor="#ffff"
+               android:textSize="15dp"
+               android:text="Yes OF Crouse"
+               android:id="@+id/yesbtnID"
+               />
+
+           <Button
+               android:layout_width="160dp"
+               android:layout_marginTop="22dp"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+               android:textSize="15dp"
+               android:text="No"
+               android:backgroundTint="#E91E63"
+               android:textColor="#FFFCFC"
+               android:id="@+id/nobtnID"
+
+               />
+
+
+       </LinearLayout>
 
 
 
 
 
-
-
-
+    </LinearLayout>
 
 </ScrollView>
