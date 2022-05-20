@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="boy_friend_name">Boy Friend Name</string>
+    <string name="girl_friend_name">Girl Friend Name</string>
 </resources>

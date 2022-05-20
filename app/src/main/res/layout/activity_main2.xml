@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/girl_friend_name"
+        android:id="@+id/editText1ID"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/boy_friend_name"
+        android:id="@+id/editText2ID"
+        android:textSize="20sp"
+        android:autofillHints="" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:onClick="showResult"
+
+        android:text="Calculate "
+        android:id="@+id/calculatebtnID"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/hr"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="330dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:layout_marginBottom="50dp"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/calculateetextI"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

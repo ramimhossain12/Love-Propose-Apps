@@ -18,10 +18,10 @@ class SplashScreen : AppCompatActivity() {
         h.postDelayed({
 
             // Delay and Start Activity
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,Home::class.java)
             startActivity(intent)
             finish()
-        } , 3000) // here we're delaying to startActivity after 3seconds
+        } , 8000) // here we're delaying to startActivity after 3seconds
 
 
     }
