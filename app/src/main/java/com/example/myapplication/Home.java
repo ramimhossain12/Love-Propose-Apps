@@ -39,5 +39,13 @@ public class Home extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(Home.this,About.class);
+                startActivity(in);
+            }
+        });
     }
 }
