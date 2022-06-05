@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +10,8 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
+     private CardView card1,card2,card3;
 
-    private Button button1,button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +19,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
+    card1 = findViewById(R.id.card1);
+    card2 = findViewById(R.id.card2);
+    card3 = findViewById(R.id.card3);
 
 
-        button1 = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
-
-
-
-        button1.setOnClickListener(new View.OnClickListener() {
+        card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(Home.this,MainActivity.class);
@@ -33,7 +32,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        card2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(Home.this,MainActivity2.class);
